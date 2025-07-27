@@ -41,6 +41,7 @@ def fetch_compound_data(wallet):
 
 # 4. Extract Features
 for wallet in wallets:
+
     print(f"Processing: {wallet}")
     data = fetch_compound_data(wallet)
     time.sleep(1.1)  # sleep to avoid rate limiting
