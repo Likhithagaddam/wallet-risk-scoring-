@@ -80,7 +80,9 @@ for wallet in wallets:
 
 # 5. Create DataFrame
 df = pd.DataFrame.from_dict(wallet_features, orient='index')
+
 df.reset_index(inplace=True)
+
 df.rename(columns={'index': 'wallet_id'}, inplace=True)
 
 # Debug: Check values before normalization
