@@ -114,5 +114,7 @@ df['score'] = df['score'].round().astype(int)
 
 # 7. Save Output
 df_final = df[['wallet_id', 'score']]
+
 df_final.to_csv('wallet_scores.csv', index=False)
+
 print("\n Done! Scores saved to 'wallet_scores.csv'")
