@@ -11,11 +11,14 @@ from sklearn.preprocessing import MinMaxScaler
 
 # 1. Load Wallets
 df_wallets = pd.read_csv('wallets.csv')
+
 wallets = df_wallets['wallet_id'].dropna().unique().tolist()
 
 # 2. API Setup
-API_KEY = 'cqt_rQhwk6Y3YyQtTdvgFWghBRD3fygd'  # ❗For real use, replace this with your actual API key
+API_KEY = 'cqt_rQhwk6Y3YyQtTdvgFWghBRD3fygd'  
+
 CHAIN_ID = '1'
+
 BASE_URL = 'https://api.covalenthq.com/v1'
 
 wallet_features = {}
