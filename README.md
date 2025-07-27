@@ -26,7 +26,8 @@ wallet_features = {}
 # 3. Fetch Compound Data
 
 def fetch_compound_data(wallet):
-  endpoint = f'{BASE_URL}/{CHAIN_ID}/address/{wallet}/stacks/compound_v2/'
+
+    endpoint = f'{BASE_URL}/{CHAIN_ID}/address/{wallet}/stacks/compound_v2/'
     params = {'key': API_KEY}
     try:
         response = requests.get(endpoint, params=params)
