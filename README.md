@@ -2,8 +2,11 @@ wallet_risk_scoring.py
 ----------------------------------
 
 import pandas as pd
+
 import requests
+
 import time
+
 from sklearn.preprocessing import MinMaxScaler
 
 # 1. Load Wallets
